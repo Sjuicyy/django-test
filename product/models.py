@@ -5,5 +5,5 @@ from django.db import models
 class product(models.Model):
     name = models.TextField()
     price =models.TextField()
-    summary=models.TextField()
-    Comment=models.TextField()
+    summary=models.TextField(default="null")
+    Comment=models.TextField(default="null")
