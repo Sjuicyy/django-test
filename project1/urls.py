@@ -19,6 +19,7 @@ from django.urls import path
 from product.views import home_page , name_page , contact_page
 
 urlpatterns = [
+    path("",home_page),
     path('admin/', admin.site.urls),
     path('home', home_page, ),
     path('name',name_page),
